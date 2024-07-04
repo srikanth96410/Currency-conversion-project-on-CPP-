@@ -1,0 +1,46 @@
+//source code to convert the currency in to different countries.
+
+#include <iostream>
+using namespace std;
+
+int convert_currency(){
+
+//information to display the content to select
+cout<<"\n These are available options :";
+cout<<"\n 1.To convert currency into Europe";
+cout<<"\n 2.To convert currency into USA";
+cout<<"\n 3.To convert currency into Japan";
+
+int option,result,rupee;
+cout<<"enter option: ";
+
+cin>>option;
+
+cout<<"enter rupee: ";
+
+cin>>rupee;
+
+switch(option){
+    case 1:
+    result = rupee * 0.011;
+    
+    cout <<" after converting indian rupees into european :"<<result<<endl;
+    
+    case 2:
+    result = rupee * 0.012;
+    
+    cout <<"After converting  indian rupees into USA :"<<result<<endl;
+    
+    case 3:
+    result = rupee * 1.93;
+    
+    cout <<"After converting  indian rupees into Japan :"<<result<<endl;
+    
+}
+return  0;
+}
+
+int main() {
+    convert_currency();
+    return 0;
+}
